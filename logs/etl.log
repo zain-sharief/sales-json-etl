@@ -1,0 +1,11 @@
+2026-11-25T19:08:54Z INFO START source=sales_data.json
+2026-11-25T19:08:54Z WARNING REJECTED source=sales_data.json record=3 transaction_id='T003' reasons=customer_id must be nonblank text | quantity must be a positive integer within SQLite's integer range
+2026-11-25T19:08:54Z INFO COMMITTED {"source_file": "sales_data.json", "rows_read": 600, "inserted": 599, "updated": 0, "unchanged": 0, "duplicates": 0, "rejected": 1}
+2026-11-25T19:08:54Z INFO START source=sales_incremental.json
+2026-11-25T19:08:54Z WARNING REJECTED source=sales_incremental.json record=153 transaction_id='T751' reasons=date is invalid or unsupported: '2023-02-30'
+2026-11-25T19:08:54Z WARNING DUPLICATE source=sales_incremental.json record=154 transaction_id='T750' conflicting_values=False
+2026-11-25T19:08:54Z INFO COMMITTED {"source_file": "sales_incremental.json", "rows_read": 154, "inserted": 150, "updated": 1, "unchanged": 1, "duplicates": 1, "rejected": 1}
+2026-11-25T19:08:54Z INFO START source=sales_incremental.json
+2026-11-25T19:08:54Z WARNING REJECTED source=sales_incremental.json record=153 transaction_id='T751' reasons=date is invalid or unsupported: '2023-02-30'
+2026-11-25T19:08:54Z WARNING DUPLICATE source=sales_incremental.json record=154 transaction_id='T750' conflicting_values=False
+2026-11-25T19:08:54Z INFO COMMITTED {"source_file": "sales_incremental.json", "rows_read": 154, "inserted": 0, "updated": 0, "unchanged": 152, "duplicates": 1, "rejected": 1}
