@@ -85,20 +85,3 @@ The final database contains **749 sales transactions** and **three committed aud
 
 ![Executed notebook output showing transaction checks and regional sales totals queried from SQLite](screenshots/database-results.png)
 
-## Publish to GitHub
-
-For a browser-only upload, sign in at [github.com/new](https://github.com/new), create a **Public** repository named `sales-json-etl` with GitHub's starter README enabled, and select **Add file → Upload files**. Drag the individual root files plus the `logs` and `screenshots` folders to the upload area so their paths stay intact. Include this project's README in the upload to replace the starter README. Commit the files, then open the repository in a signed-out or incognito window to verify that the files and screenshots are visible. Copy the repository URL from your address bar for submission.
-
-For the command-line route, install [Git for Windows](https://git-scm.com/install/windows), create an **empty** public repository without a starter README, then run the following from the extracted project folder. Replace `YOUR-USERNAME` with your GitHub username.
-
-```powershell
-git init -b main
-git add .
-git commit -m "Add sales JSON ETL pipeline"
-git remote add origin https://github.com/YOUR-USERNAME/sales-json-etl.git
-git push -u origin main
-```
-
-If Git asks you to set an author name or email, use `git config user.name "Your Name"` and `git config user.email "YOUR-COMMIT-EMAIL"` in that folder and repeat the commit. GitHub provides a private no-reply commit address in your email settings if you prefer to use it. The repository URL will be `https://github.com/YOUR-USERNAME/sales-json-etl`.
-
-References: [Python sqlite3](https://docs.python.org/3/library/sqlite3.html) · [Install Jupyter](https://jupyter.org/install) · [Upload a file to GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)
